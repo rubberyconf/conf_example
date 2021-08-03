@@ -1,0 +1,21 @@
+meta:
+  description: 'testing new cart'
+  tags:
+    - cart
+    - new business test cases
+  ttl: 120s
+  value: 
+      data: false # by default all client will get false
+      type: bool
+
+configurations:
+  - config: 
+    id: 1
+    rules:
+      platform:
+        - web
+    ttl: 200s
+    value: 
+      data: true # only client with web enabled will get true
+      type: bool
+ 
